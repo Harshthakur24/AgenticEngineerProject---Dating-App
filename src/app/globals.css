@@ -1,0 +1,43 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #f4efe4;
+  --ink: #1c1712;
+  --mute: #6b6156;
+  --rule: #d8cfc0;
+  --card: #fffaf2;
+  --accent: #8f2d2d;
+  --gold: #b0893e;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-mute: var(--mute);
+  --color-rule: var(--rule);
+  --color-card: var(--card);
+  --color-accent: var(--accent);
+  --color-gold: var(--gold);
+  --font-sans: var(--font-outfit);
+  --font-serif: var(--font-fraunces);
+}
+
+html {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  background:
+    radial-gradient(1200px 500px at 10% -10%, #efe4d0 0%, transparent 50%),
+    var(--paper);
+  color: var(--ink);
+  font-family: var(--font-outfit), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+.serif {
+  font-family: var(--font-fraunces), Georgia, serif;
+}
